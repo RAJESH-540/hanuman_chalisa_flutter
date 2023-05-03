@@ -5,4 +5,5 @@ var appData = <String,String>{
     artiName: arti,
     bajrangPathName:bajrangBanPath,
     sankathMochan:SankathMochanPath,
+    ramChandarkirplu:ramChandarKirpluPath
 };

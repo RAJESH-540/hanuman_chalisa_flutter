@@ -99,6 +99,18 @@ class _HomeScreenState extends State<HomeScreen> {
                         onClosed: (bool) {},
                         appBarName: sankathMochan,
                       ),
+                      OpenContainerWrapper(
+                        closedBuilder:
+                            (BuildContext _, VoidCallback openContainer) {
+                          return CardView(
+                            cardName: ramChandarkirplu,
+                            openContainer: openContainer,
+                          );
+                        },
+                        transitionType: ContainerTransitionType.fade,
+                        onClosed: (bool) {},
+                        appBarName: ramChandarkirplu,
+                      ),
 
                     ],
                   ),
