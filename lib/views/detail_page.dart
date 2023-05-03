@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hanuman_chalisa_flutter/constants/texts.dart';
-
 import '../constants/AppData.dart';
 
 class DetailScreen extends StatefulWidget {
@@ -17,6 +15,7 @@ class _DetailScreenState extends State<DetailScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text(widget.appBarName),
       ),
       body: SingleChildScrollView(
@@ -26,9 +25,9 @@ class _DetailScreenState extends State<DetailScreen> {
             child: Column(
               children:[
                  Text(
-
-                     appData[widget.appBarName]?.toString()??"", textAlign: TextAlign.center,
-                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17, color: Colors.orange,))
+                     appData[widget.appBarName]?.toString()??"",
+                     textAlign: TextAlign.center,
+                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17, color: Colors.orange,)),
               ],
             ),
           ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hanuman_chalisa_flutter/views/home_screen.dart';
+import 'package:hanuman_chalisa_flutter/views/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.yellow,
       ),
-      home: HomeScreen(),
+      home: SplashScreen(),
     );
   }
 }
